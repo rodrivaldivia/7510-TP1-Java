@@ -1,5 +1,7 @@
 package ar.uba.fi.tdd.rulogic;
 
+import ar.uba.fi.tdd.rulogic.model.KnowledgeBase;
+
 /**
  * Console application.
  *
@@ -7,6 +9,9 @@ package ar.uba.fi.tdd.rulogic;
 public class App
 {
 	public static void main(String[] args) {
+		
 		System.out.println("I shall answer all your questions!");
+		KnowledgeBase knowledgeBase = new KnowledgeBase();
+		knowledgeBase.parseDB("src/main/resources/rules.db");
     }
 }
