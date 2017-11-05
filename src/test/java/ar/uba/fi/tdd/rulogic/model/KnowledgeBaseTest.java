@@ -30,9 +30,8 @@ public class KnowledgeBaseTest {
 	}
 
 	@Test
-	public void test_Wrong_Fact3() {
-		Assert.assertFalse(this.knowledgeBase.answer(""));
-	}
+	public void test_Wrong_Fact3() { Assert.assertFalse(this.knowledgeBase.answer("")); }
+
 
 
 	@Test
@@ -44,5 +43,25 @@ public class KnowledgeBaseTest {
 	public void test_Correct_Fact2() {
 		Assert.assertTrue(this.knowledgeBase.answer("hermano(nicolas, roberto)."));
 	}
+
+
+
+	@Test
+	public void test_Non_Existent_Rule() {
+		Assert.assertFalse(this.knowledgeBase.answer("primo(X, Y)"));
+	}
+
+	@Test
+	public void test_Non_Existent_Rule2() {
+		Assert.assertFalse(this.knowledgeBase.answer("(X, Y)"));
+	}
+
+
+//	@Test
+//	public void test_Correct_Rule() {
+//		Assert.assertTrue(this.knowledgeBase.answer("hijo(alejandro, roberto)"));
+//	}
+
+	// testear rule con arg mal
 
 }

@@ -18,14 +18,56 @@ public class KnowledgeBase {
 				}
 			}
 		}
+		if (Rule.isRule(query)){
+			if(!ruleExists(query)){
+				return false;
+			}
+			Rule completeRule = getCompleteRule(query);
+			LinkedList<Fact> facts = completeRule.getFacts(query);
+			for (int i=0; i<facts.size() ;i++){
+				if(checkFact(facts.get(i))){
+					return false;
+				}
+			}
+			return true;
+		}
+		return false;
+	}
+
+	private boolean checkFact(Fact fact){
+		for (int i=0; i < factList.size(); i++){
+			if (factList.get(i).equals(fact)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private Rule getCompleteRule(String rule) {
+		String name = Rule.name(rule);
+		for(int i=0 ;i<ruleList.size() ;i++){
+			if (name.equals(ruleList.get(i).getName())){
+				return ruleList.get(i);
+			}
+		}
+		return null;
+	}
+
+	private boolean ruleExists(String rule) {
+		String name = Rule.name(rule);
+		for(int i=0 ;i<ruleList.size() ;i++){
+			if (name.equals(ruleList.get(i).getName())){
+				return true;
+			}
+		}
 		return false;
 	}
 
 
-	private boolean isRule(String rule){
-//		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
-		return rule.matches("\\w+\\(\\w+(, \\w+)*\\) :- (\\w+\\(\\w+(, \\w+)*\\), )*\\w+\\(\\w+(, \\w+)*\\).");
-	}
+//	private boolean isRule(String rule){
+////		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
+//		return rule.matches("\\w+\\(\\w+(, \\w+)*\\) :- (\\w+\\(\\w+(, \\w+)*\\), )*\\w+\\(\\w+(, \\w+)*\\).");
+//	}
 
 	public boolean parseDB(String fileName) {
 

@@ -2,13 +2,18 @@ package ar.uba.fi.tdd.rulogic.model;
 
 public class Fact {
 
-    String stringFact;
+    private String stringFact;
+
     public Fact (String fact){
         this.stringFact = fact;
     }
 
     public boolean isEqual(String otherFact){
         return this.stringFact.equals(otherFact);
+    }
+
+    public boolean equals(Fact otherFact){
+        return otherFact.isEqual(this.stringFact);
     }
 
     public static boolean isFact (String fact){

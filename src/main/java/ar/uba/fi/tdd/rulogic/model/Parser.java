@@ -18,7 +18,6 @@ public class Parser {
             }
             else{
                 if(Fact.isFact(facts[i])){
-//					System.out.println(splitArray[i]);
                     factList.add(new Fact(facts[i]));
                 }
                 else{

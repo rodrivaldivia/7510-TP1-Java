@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" time="0.103" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="ar.uba.fi.tdd.rulogic.model.RuleTest" time="0.159" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -65,11 +65,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Correct_Fact2" time="0.064"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Non_Existent_Rule2" time="0.009"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Wrong_Fact" time="0.003"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Wrong_Fact2" time="0.007"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Wrong_Fact3" time="0.004"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Non_Existent_Rule" time="0.007"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest" name="test_Correct_Fact" time="0.009"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_2args" time="0.146"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_withFact" time="0.006"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_incorrect" time="0.002"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_incomplete" time="0.001"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_1arg" time="0.004"/>
 </testsuite>
