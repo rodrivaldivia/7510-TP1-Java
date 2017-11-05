@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="ar.uba.fi.tdd.rulogic.model.RuleTest" time="0.109" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="ar.uba.fi.tdd.rulogic.model.RuleTest" time="0.699" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
@@ -27,6 +27,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
+    <property name="net.sourceforge.cobertura.datafile" value="/Users/rodri/Documents/Codigo/TDD/7510-TP1-Java/target/cobertura/cobertura.ser"/>
     <property name="classworlds.conf" value="/Users/rodri/Documents/BasuraGenerica/apache-maven-3.5.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/rodri/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -35,8 +36,8 @@
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.13"/>
-    <property name="library.jansi.path" value="/Users/rodri/Documents/BasuraGenerica/apache-maven-3.5.0/lib/jansi-native/osx64"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/Users/rodri/Documents/BasuraGenerica/apache-maven-3.5.0/lib/jansi-native/osx64"/>
     <property name="user.home" value="/Users/rodri"/>
     <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
     <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
@@ -47,7 +48,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean compile test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher cobertura:cobertura"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -61,16 +62,17 @@
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="project.build.outputDirectory" value="/Users/rodri/Documents/Codigo/TDD/7510-TP1-Java/target/generated-classes/cobertura"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_getFact" time="0.099"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_2args" time="0.001"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_withFact" time="0.002"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_getFact" time="0.692"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_2args" time="0.002"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_withFact" time="0.001"/>
   <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_incorrect" time="0.001"/>
   <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_getFacts" time="0.001"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_incomplete" time="0.002"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_1arg" time="0.001"/>
-  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isQueryRule_correct" time="0.002"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_incomplete" time="0.001"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isRule_correct_1arg" time="0"/>
+  <testcase classname="ar.uba.fi.tdd.rulogic.model.RuleTest" name="test_isQueryRule_correct" time="0.001"/>
 </testsuite>
