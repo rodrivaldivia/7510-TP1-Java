@@ -7,4 +7,9 @@ public class Rule {
         this.stringRule = rule;
     }
 
+    public static boolean isRule(String rule){
+//		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
+        return rule.matches("\\w+\\(\\w+(, \\w+)*\\) :- (\\w+\\(\\w+(, \\w+)*\\), )*\\w+\\(\\w+(, \\w+)*\\).");
+    }
+
 }

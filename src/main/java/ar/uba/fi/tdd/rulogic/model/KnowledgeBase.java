@@ -11,9 +11,9 @@ public class KnowledgeBase {
 
 
 	public boolean answer(String query) {
-		if(isFact(query)){
-			for (int i=0;i < factList.size();i++){
-				if (factList.get(i).isFact(query)) {
+		if(Fact.isFact(query)){
+			for (int i=0; i < factList.size(); i++){
+				if (factList.get(i).isEqual(query)) {
 					return true;
 				}
 			}
@@ -21,12 +21,6 @@ public class KnowledgeBase {
 		return false;
 	}
 
-	private boolean isFact(String fact){
-		if (isRule(fact)){
-			return false;
-		}
-		return fact.matches("\\w+\\(\\w+(, \\w+)*\\).");
-	}
 
 	private boolean isRule(String rule){
 //		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
@@ -43,25 +37,11 @@ public class KnowledgeBase {
 			System.out.println("No se encontró el archivo");
 			return  false;
 		}
-		String[] splitArray = content.split("\\n");
-		for (int i=0; i<splitArray.length; i++){
-//			System.out.println(splitArray[i]);
-//			System.out.println("New String");
-			if (isRule(splitArray[i])){
-//				System.out.println(splitArray[i]);
-				this.ruleList.add(new Rule(splitArray[i]));
-			}
-			else{
-				if(isFact(splitArray[i])){
-					System.out.println(splitArray[i]);
-					this.factList.add(new Fact(splitArray[i]));
-				}
-				else{
-//					System.out.println(splitArray[i]);
-					return false;
-				}
-			}
+		Parser parser = new Parser(content);
+		if (!parser.parseDB(factList, ruleList)) {
+			return false;
 		}
+
 		return true;
 	}
 }

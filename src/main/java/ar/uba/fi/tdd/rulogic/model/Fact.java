@@ -7,7 +7,11 @@ public class Fact {
         this.stringFact = fact;
     }
 
-    public boolean isFact(String otherFact){
+    public boolean isEqual(String otherFact){
         return this.stringFact.equals(otherFact);
+    }
+
+    public static boolean isFact (String fact){
+        return fact.matches("\\w+\\(\\w+(, \\w+)*\\).");
     }
 }

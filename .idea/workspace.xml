@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="609336d2-4392-4781-b529-220547c2a774" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rulogic.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/DataBaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Parser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/incomplete-rules.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBase.java" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/rules.db" afterPath="$PROJECT_DIR$/src/main/resources/rules.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java" afterPath="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java" afterPath="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.uba.fi.tdd.rulogic.model.DataBaseTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.uba.fi.tdd.rulogic.model.DataBaseTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/ar.uba.fi.tdd.rulogic.model.DataBaseTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/ar.uba.fi.tdd.rulogic.model.DataBaseTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/ar.uba.fi.tdd.rulogic.model.KnowledgeBaseTest.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KnowledgeBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KnowledgeBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state relative-caret-position="254">
+              <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#196#202#0" expanded="true" />
@@ -41,11 +39,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KnowledgeBaseTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Parser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+              <folding>
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KnowledgeBaseTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="138">
               <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataBaseTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/DataBaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +89,8 @@
       <file leaf-file-name="rules.db" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/rules.db">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,19 +99,12 @@
       <file leaf-file-name="Fact.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="150">
+              <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+              <folding>
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#364#365#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,11 +131,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java" />
         <option value="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/DataBaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/rules.db" />
+        <option value="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/incomplete-rules.db" />
         <option value="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/rules.db" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java" />
       </list>
     </option>
   </component>
@@ -390,7 +418,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -402,72 +432,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/rules.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/incomplete-rules.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/DataBaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <marker date="1509902260113" expanded="true" signature="45:199" ph="..." />
-            <marker date="1509902260113" expanded="true" signature="343:420" ph="{...}" />
-            <marker date="1509902260113" expanded="true" signature="467:576" ph="{...}" />
-            <marker date="1509902260113" expanded="true" signature="626:733" ph="{...}" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="56" lean-forward="false" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Rule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="180">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <marker date="1509904997240" expanded="false" signature="111:121" ph=" { " />
-            <marker date="1509904997240" expanded="false" signature="144:150" ph=" }" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/Fact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/rules.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="56" column="22" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+        <state relative-caret-position="254">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#196#202#0" expanded="true" />
             <element signature="e#257#263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ar/uba/fi/tdd/rulogic/model/KnowledgeBaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
