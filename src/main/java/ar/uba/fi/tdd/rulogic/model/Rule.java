@@ -11,11 +11,17 @@ public class Rule {
     }
 
     public static boolean isRule(String rule){
-//		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
         return rule.matches("\\w+\\(\\w+(, \\w+)*\\) :- (\\w+\\(\\w+(, \\w+)*\\), )*\\w+\\(\\w+(, \\w+)*\\).");
     }
 
+    public static boolean isQueryRule(String query){
+        return Fact.isFact(query);
+    }
+
     public static String name(String rule){
+        if(rule.indexOf("(") == -1){
+            return rule;
+        }
         return rule.substring(0,rule.indexOf("("));
     }
 
@@ -34,9 +40,13 @@ public class Rule {
         String ruleWithArguments = this.stringRule;
         for(int i=0 ; i<ruleArguments.length ; i++){
             ruleWithArguments = ruleWithArguments.replaceAll(ruleArguments[i],queryArguments[i]);
-            System.out.println(ruleWithArguments);
         }
-
+        ruleWithArguments = ruleWithArguments.substring(ruleWithArguments.indexOf(":- ") + 3);
+        String [] splitFacts = ruleWithArguments.split("\\), ");
+        for(int i=0 ; i<(splitFacts.length-1) ; i++) {
+            factsList.add(new Fact(splitFacts[i] + ")."));
+        }
+        factsList.add(new Fact( splitFacts[splitFacts.length-1]));
         return factsList;
     }
 

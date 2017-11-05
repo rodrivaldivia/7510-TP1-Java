@@ -18,20 +18,21 @@ public class KnowledgeBase {
 				}
 			}
 		}
-		if (Rule.isRule(query)){
+
+		if (Rule.isQueryRule(query)){
 			if(!ruleExists(query)){
 				return false;
 			}
 			Rule completeRule = getCompleteRule(query);
 			LinkedList<Fact> facts = completeRule.getFacts(query);
 			for (int i=0; i<facts.size() ;i++){
-				if(checkFact(facts.get(i))){
+				if(!checkFact(facts.get(i))){
 					return false;
 				}
 			}
 			return true;
 		}
-		return false;
+	return false;
 	}
 
 	private boolean checkFact(Fact fact){
@@ -62,12 +63,6 @@ public class KnowledgeBase {
 		}
 		return false;
 	}
-
-
-//	private boolean isRule(String rule){
-////		return rule.matches("\\w+\\(\\w+(,\\ \\w+)*\\)\\ \\:\\-\\ (\\w+\\(\\w+(,\\ \\w+)*\\),\\ )*\\.");
-//		return rule.matches("\\w+\\(\\w+(, \\w+)*\\) :- (\\w+\\(\\w+(, \\w+)*\\), )*\\w+\\(\\w+(, \\w+)*\\).");
-//	}
 
 	public boolean parseDB(String fileName) {
 

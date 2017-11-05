@@ -2,7 +2,7 @@ package ar.uba.fi.tdd.rulogic.model;
 
 public class Fact {
 
-    private String stringFact;
+    public String stringFact;
 
     public Fact (String fact){
         this.stringFact = fact;
@@ -17,6 +17,9 @@ public class Fact {
     }
 
     public static boolean isFact (String fact){
+//        if (Rule.isRule(fact)){
+//            return false;
+//        }
         return fact.matches("\\w+\\(\\w+(, \\w+)*\\).");
     }
 }
